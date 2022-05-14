@@ -1,0 +1,27 @@
+// Para crear la carpeta con la fecha de hoy, el comando fue:
+
+mkdir $(date +%Y%m%d_%H%M%S
+
+
+// Para revisar el número de veces que aparece crítica en el documento:
+
+grep -o -i crítica capacidad_hospitalaria_micrositio.csv | wc -l
+
+
+// Para descargar un archivo desde una URL:
+curl -O link_archivo
+
+// Ver el contenido del archivo
+
+Todo - cat archivo.txt
+Solo tamaño pantalla - less archivo.txt
+
+// Navegar por datos
+
+head - muestra las 10 primeras líneas
+tail - muestra las 10 últimas líneas
+sed - editor para buscar y reemplazar datos
+
+sed "s/buscar/reemplazar/g" archivo-origen archivo-destino
+
+wc - sirve para contar el número de líneas del archivo
