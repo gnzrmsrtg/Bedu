@@ -27,7 +27,6 @@
     </div>
 </body>
 <script>
-    let leap, year;
 /* Empiezan los botones */
     clearButton = () => {
         document.getElementById('yearsOld').value = "";
@@ -35,11 +34,11 @@
     }
     calc = () => {
         year = document.getElementById ('yearsOld').value;
-        leap = new Date(year, 1,29).getDate()===29;
+        const leap = new Date(year,1,29).getDate()===29;
         if (leap) {
-            document.getElementById('resultado').innerHTML = (year + " es año bisiesto");
+            document.getElementById('resultado').innerHTML = ("El año " + year + " es año bisiesto");
         } else {
-            document.getElementById('resultado').innerHTML = (year + " no es año bisiesto");
+            document.getElementById('resultado').innerHTML = ("El año " + year + " no es año bisiesto");
         }
     }
 </script>
