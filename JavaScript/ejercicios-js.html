@@ -10,15 +10,20 @@
     <h2>Aquí no hay nada, pero ve la consola -> </h2>
 </body>
 <script>
-    const time = prompt('¿Qué hora es?');
-    let greeting;
+// Ejercicio 1
 
+    console.log("Hola, primero vamos a saludarnos")
+    alert("¡Abre la consola!")
+
+    const time = prompt('¿Qué hora es?');
+    
     if (time == 1) {
         console.log("Es la " + time + ":00");    
     } else {
         console.log("Son las " + time + ":00");
     }  
 
+    let greeting;
     if (time < 6) {
         greeting = "¡Buenas madrugadas!";
     } else if (time < 12) {
@@ -32,5 +37,26 @@
     }
 
     console.log (greeting);
+
+// Ejercicio 2
+
+    console.log("Ahora vamos a mostrar todos los números pares que hay hasta el 100")
+    for (let pares = 1; pares <= 100; pares++){
+        if (pares % 2 == 0) {
+            console.log(pares);
+        }
+    }
+
+// Ejercicio 3
+
+    console.log("Ahora vamos a analizar un texto");
+    let frase = "No comas ajos ni cebollas, porque no saquen por el olor tu villanería. Anda despacio; habla con resposo; pero no de manera que parezca que te escuchas a ti mismo; que toda afectación es mala. Come poco y cena más poco; que la salud de todo el cuerpo se fragua en la oficina del estómago. Sé templado en el beber, considerando que el vino demasiado ni guarda secreto, ni cumple palabra. Ten cuenta, Sancho, de no mascar a dos carrillos, ni de erutar delante de nadie."
+    console.log(frase);
+
+    var longitud = frase.length
+    var puntos = frase.split(".").length -1;
+
+    console.log("Este texto tiene " + longitud + " caracteres.")
+    console.log("En este texto hay " + puntos + " puntos.")
 </script>
 </html>
