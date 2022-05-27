@@ -45,6 +45,54 @@ var area = pi * radio ** 2
 console.log(area)
 
 
-
-
 // 3. La hipotenusa de un triángulo rectángulo cuyos catetos tienen de tamaño 4.3 y 5.9 (a2 + b2 = c2)
+
+
+
+/////// EJERCICIOS DE IF - ELSE - SWITCH ///////
+
+// Primero el IF - ELSE normalito 
+var x = 2
+if (x > 10) {
+    x += 3;
+} else if (x == 10) {
+    x -= 2;   
+} else x += 20;
+
+console.log(x)
+
+// Ahora vamos a ver cómo funciona SWITCH
+var y = 2
+switch (y) {
+    case y > 10: y +=3; break; 
+    case y == 10: y -= 2; break;
+    default : y += 20;
+}
+
+console.log(y)
+
+// Este es con operador ternario
+// ? sería el IF y : sería el ELSE
+var z = 7
+z = z < 4 ? z += 2 : z -= 1;
+
+console.log(z)
+
+
+/////// EJERCICIOS DE FOR y WHILE ///////
+
+var a // = prompt('Ingresa un número');
+while (a > 0) {
+    a -= 1;
+    console.log(a)
+}
+
+var b //= prompt('Ingresa un número');
+for (b > 0 ; b -= 1;) {
+    console.log(b)
+}
+
+var c //= prompt('Ingresa un número')
+for (let i = 0; i <= c; i ++){
+    console.log(i)
+}
