@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <h2>Aquí no hay nada, pero ve la consola -> </h2>
+</body>
+<script>
+    const time = prompt('¿Qué hora es?');
+    let greeting;
+
+    if (time == 1) {
+        console.log("Es la " + time + ":00");    
+    } else {
+        console.log("Son las " + time + ":00");
+    }  
+
+    if (time < 6) {
+        greeting = "¡Buenas madrugadas!";
+    } else if (time < 12) {
+        greeting = "¡Buenos días!";
+    } else if (time < 20) {
+        greeting = "¡Buenas tardes!";
+    } else if (time >= 20 && time <= 24) {
+        greeting = "¡Buenas noches!";
+    } else {
+        greeting = "No le inventes horas al día";
+    }
+
+    console.log (greeting);
+</script>
+</html>
