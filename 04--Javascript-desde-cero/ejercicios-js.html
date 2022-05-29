@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./js/header.js"></script>
     <title>Ejercicios JavaScript</title>
 </head>
 <body>
+    <header></header>
+    <br/>
     <h2>Aquí no hay nada, pero ve la consola -> </h2>
 </body>
-<script>
+<script async>
 // Ejercicio 1
 
     console.log("Hola, primero vamos a saludarnos")
     alert("¡Abre la consola!")
 
-    const time = prompt('¿Qué hora es?');
+    const time = prompt('¿Qué hora es? (en formato de 24 hrs.');
     
     if (time == 1) {
         console.log("Es la " + time + ":00");    
