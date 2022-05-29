@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon-bedu.ico">
+    <script type="text/javascript" src="./js/header.js"></script>
+    <title>Ejercicios de arreglos</title>
+</head>
+<body>
+    <header></header>
+    <br/>
+    <h2>Aquí no hay nada, pero ve la consola -> </h2>
+</body>
+</html>
+<script>
+// Probando los arrays
+const colors = ['Red', 'Green', 'Blue'];
+console.log(colors)
+
+//Probando los objetos
+const gatos = {
+    gato1: {
+        nombre: 'Chofo',
+        color: 'negro',
+        edad: 2
+    },  
+    gato2: {
+        nombre: 'Sterling',
+        color: 'naranjoso',
+        edad: 7
+    }
+}
+
+console.log(gatos.gato2.nombre)
+
+//Probando las funciones
+/// Leemos el número a convertir
+const number = prompt('Ingresa el número de MB');
+/// Declaramos la función
+const bytes = function(number) {
+    return number / 1024;
+} 
+/// Ejecutamos la función y limitamos a dos decimales
+const convertBytes = bytes(number).toFixed(2);
+/// Mostramos el resultado en consola
+console.log(number + ' MB equivalen a ' + convertBytes + ' GB');
+
+
+///////////////////// EJERCICIOS /////////////////////
+
+// Ejercicio 1 
+/// Dado el arreglo numbers compuesto solamente por números enteros
+/// mayores que cero, te toca obtener el promedio de todos sus elementos.
+
+/// Solución vista en: https://www.delftstack.com/es/howto/javascript/javascript-sum-of-array/
+
+const numeros = [5, 3, 4, 7, 2, 1, 9, 7, 7]
+var suma = 0
+
+for (var i = 0; i < numeros.length; i++) {
+    suma += numeros[i];
+}
+
+var prom = suma / numeros.length;
+
+console.log('El promedio del array numeros ' + numeros + ' es ' + prom)
+
+////////////////////////////////////////////////////////
+
+// Ejercicio 2
+/// Para esta actividad vamos a tomar un arreglo con pares [key, value] y
+/// crear un objeto con sus respectivas propiedades y valores.
+
+/// Solución vista en: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
+
+const car = [['brand', 'Nissan'], ['model', 'Versa'], ['year', 2020]]
+
+const objeto = Object.fromEntries(car);
+
+console.log(objeto)
+
+
+////////////////////////////////////////////////////////
+
+// Ejercicio 3
+/// Crear una función power que recibe dos argumentos base y exponent. La
+/// función debe retornar el resultado de elevar base a la potencia exponent.
+
+const power = function(base, exponente) {
+    return base ** exponente
+}
+
+var base = 2
+var exponente = 4
+
+const resultado = power(base, exponente);
+
+console.log('La base ' + base + ' a la ' + exponente + ' potencia da igual a ' + resultado)
+
+</script>
